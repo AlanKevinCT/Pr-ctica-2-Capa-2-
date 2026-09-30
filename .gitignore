@@ -1,0 +1,5 @@
+emisor
+receptor
+*.o
+.DS_Store
+*.swp
