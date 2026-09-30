@@ -22,12 +22,10 @@ docker network create practica_2
 
 ### 3. Activar el nodo Receptor (se inicia en la interfaz eth0)
 ```bash
-docker run -it --rm --name receptor --network practica_2 \
-  --cap-add=NET_RAW --cap-add=NET_ADMIN capa_2 ./receptor
+docker run -it --rm --name receptor --network practica_2 --cap-add=NET_RAW --cap-add=NET_ADMIN capa_2 ./receptor
 ```
 
 ### 4. Activar el nodo Emisor (envía por medio de eth0) (se usa en otra terminal)
 ```bash
-docker run -it --rm --name emisor --network practica_2 \
-  --cap-add=NET_RAW --cap-add=NET_ADMIN capa_2 ./emisor
+docker run -it --rm --name emisor --network practica_2 --cap-add=NET_RAW --cap-add=NET_ADMIN capa_2 ./emisor
 ```
