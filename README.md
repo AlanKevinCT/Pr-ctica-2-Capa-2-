@@ -8,6 +8,8 @@ Para realizar la práctica se optópor escribir dos programas en C (receptor.c y
 
 ## Ejecución del programa con Docker
 
+Se debe estar en el directorio raiz (donde está el Dockerfile)
+
 ### 1. Construir la imagen de Docker
 ```bash
 docker build -t capa_2 .
